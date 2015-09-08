@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'berkshelf'
 gem 'coveralls', require: false
-gem 'rubocop'
+gem 'rubocop', '0.33.0'
 
 group :development do
   gem 'test-kitchen'
