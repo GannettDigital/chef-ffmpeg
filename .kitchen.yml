@@ -1,0 +1,34 @@
+---
+driver:
+  name: vagrant
+  network:
+  - ["private_network", {ip: "192.168.33.33"}]
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-6.6
+
+suites:
+  - name: default
+    data_bags_path: test/integration/data_bags
+    run_list:
+      - recipe[ffmpeg::default]
+    attributes:
+      yum-gd:
+        repos: 
+          - gdcustom
+          - epel
+  - name: devel
+    data_bags_path: test/integration/data_bags
+    run_list:
+      - recipe[ffmpeg::default]
+    attributes:
+      yum-gd:
+        repos:
+          - gdcustom
+          - epel
+      ffmpeg:
+        package:
+          devel_only: 'true'
