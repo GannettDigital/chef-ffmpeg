@@ -1,5 +1,6 @@
 name             'ffmpeg'
 maintainer       'Gannett'
+maintainer_email 'jneves@gannett.com'
 license	         'All rights reserved'
 description      'Installs ffmpeg'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
