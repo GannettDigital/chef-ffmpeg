@@ -21,6 +21,8 @@ Platforms
 Currently the cookbook supports only source install using ark,
 which should be cross platform.
 
+The package install was built against Centos 6.6 based on the atrpms repository sources.
+
 Attributes
 ------------
 * `node['yum-gd']['repos'] = %w(gdcustom epel)` - This cookbook depends on pacakges from epel.  This attribute resolves that for standalone installs. Override as needed.
