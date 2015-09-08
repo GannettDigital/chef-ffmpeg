@@ -11,9 +11,9 @@ Requirements
 
 ### Cookbooks
 
-yum-gd
-build-essential
-ark
+- yum-gd
+- build-essential
+- ark
 
 Platforms
 ------------
